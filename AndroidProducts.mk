@@ -15,10 +15,10 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_PL2.mk
+    $(LOCAL_DIR)/lineage_C1N.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_PL2-eng \
-    lineage_PL2-user \
-    lineage_PL2-userdebug
+    lineage_C1N-eng \
+    lineage_C1N-user \
+    lineage_C1N-userdebug
 

@@ -21,31 +21,31 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-#nherit from PL2 device
-$(call inherit-product, device/nokia/PL2/device.mk)
+#nherit from C1N device
+$(call inherit-product, device/nokia/C1N/device.mk)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := PL2,PL2_sprout,Plate2
+TARGET_OTA_ASSERT_DEVICE := C1N,C1N_sprout,charm
 
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-PRODUCT_NAME := lineage_PL2
-PRODUCT_DEVICE := PL2
+PRODUCT_NAME := lineage_C1N
+PRODUCT_DEVICE := C1N
 PRODUCT_MANUFACTURER := HMD Global
 PRODUCT_BRAND := Nokia
-PRODUCT_MODEL := Nokia 6.1
+PRODUCT_MODEL := Nokia 7
 
 PRODUCT_GMS_CLIENTID_BASE := android-hmd
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRODUCT_DEVICE=PL2_sprout \
+    PRODUCT_DEVICE=C1N_sprout \
     PRODUCT_NAME=Plate2_00WW \
-    PRIVATE_BUILD_DESC="Plate2_00WW-user 10 QKQ1.190828.002 00WW_4_15C release-keys"
+    PRIVATE_BUILD_DESC="Onyx_00WW-user 10 QKQ1.190828.002 00WW_4_10C release-keys"
 
-BUILD_FINGERPRINT := Nokia/Plate2_00WW/PL2_sprout:10/QKQ1.190828.002/00WW_4_15C:user/release-keys
+BUILD_FINGERPRINT := Nokia/Onyx_00WW/B2N_sprout:10/QKQ1.190828.002/00WW_4_10C:user/release-keys

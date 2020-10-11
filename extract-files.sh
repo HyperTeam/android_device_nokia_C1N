@@ -16,9 +16,9 @@
 
 set -e
 
-export DEVICE=PL2
+export DEVICE=C1N
 export DEVICE_COMMON=sdm660-common
 export VENDOR=nokia
-export DEVICE_BRINGUP_YEAR=2019
+export DEVICE_BRINGUP_YEAR=2020
 
 ./../../$VENDOR/$DEVICE_COMMON/extract-files.sh $@
